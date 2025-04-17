@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-color: #29303e;
+}
+
+.myntra-login {
+  width: 800px;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.myntra-login form {
+  background-color: #fff;
+  width: 50%;
+  padding: 25px 50px;
+}
+
+.myntra-login form h1 {
+  font-size: 1.4em;
+  margin-top: 15px;
+}
+
+.myntra-login form p {
+  font-size: 0.95rem;
+  margin-bottom: 40px;
+}
+
+.myntra-login form label {
+  display: block;
+  margin-top: 20px;
+}
+
+.myntra-login form input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.myntra-login form .forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 0.85em;
+  color: #e72744;
+  cursor: pointer;
+}
+
+.myntra-login form button {
+  border: none;
+  outline: none;
+  margin-top: 40px;
+  padding: 12px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.myntra-login form .login {
+  width: 60%;
+  color: #e72744;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.myntra-login form .login:hover {
+  background: #e72744;
+  color: #fff;
+}
+
+.myntra-login form .signup {
+  width: 38.5%;
+  color: #e72744;
+  background: #fff;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.myntra-login form .signup:hover {
+  background-color: #e72744;
+  color: #fff;
+}
+
+.myntra-login .poster {
+  width: 50%;
+  background-image: url("/login.png");
+  background-size: cover;
+  background-position: 33%;
+}

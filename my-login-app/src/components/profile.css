@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .profile {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .profile h2 {
+    font-size: 1.5rem;
+  }
+  
+  .profile .email {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+  }
+  
+  .menu ul li {
+    margin: 20px 0;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .menu ul li a:hover {
+    color: #e60012;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .profile-info,
+  .order-history {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .profile-info form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .profile-info form input,
+  .profile-info form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .profile-info form button {
+    background-color: #e60012;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .profile-info form button:hover {
+    background-color: #b50010;
+  }
+  
+  .order-history .order {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .order-history .order p {
+    margin: 5px 0;
+  }
+  
