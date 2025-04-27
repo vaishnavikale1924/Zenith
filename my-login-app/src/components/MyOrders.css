@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --primary: #121212;
+  --accent: #E0C097;
+  --secondary: #CDB4DB;
+  --text: #F5F5F5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+.orders-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+  background-color: var(--primary);
+  min-height: 100vh;
+  border: 1px solid #4a4948;
+}
+
+.orders-container h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--text);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 10px;
+}
+
+.order-card {
+  display: flex;
+  gap: 16px;
+  background-color: var(--secondary);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 14px rgba(224, 192, 151, 0.3);
+  transform: translateY(-2px);
+}
+
+.product-img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+}
+
+.order-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.order-details h4 {
+  font-size: 18px;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.order-details p {
+  font-size: 14px;
+  color: #2d2d2d;
+  margin-bottom: 4px;
+}
+
+.status {
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.status.delivered {
+  color: #03a685;
+}
+
+.status.in-transit {
+  color: #ffae14;
+}
+
+.order-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.order-actions button {
+  padding: 8px 18px;
+  background-color: var(--primary);
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.order-actions button:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+}

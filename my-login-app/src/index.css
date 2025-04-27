@@ -1,54 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --primary: #121212;
+  --accent: #E0C097;
+  --secondary: #CDB4DB;
+  --text: #F5F5F5;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   user-select: none;
 }
 
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  font-family: sans-serif;
-  background-color: #29303e;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--primary);
 }
 
 .myntra-login {
   width: 800px;
-  height: 480px;
+  height: 580px;
   display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  border: 1px solid #CDB4DB;
+  
 }
 
 .myntra-login form {
-  background-color: #fff;
+  background-color: var(--primary);
   width: 50%;
-  padding: 25px 50px;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .myntra-login form h1 {
-  font-size: 1.4em;
-  margin-top: 15px;
+  font-size: 1.6em;
+  color: var(--text);
+  margin-bottom: 10px;
 }
 
 .myntra-login form p {
   font-size: 0.95rem;
-  margin-bottom: 40px;
+  color: var(--secondary);
+  margin-bottom: 30px;
 }
 
 .myntra-login form label {
-  display: block;
+  font-size: 0.9rem;
   margin-top: 20px;
+  color: var(--text);
 }
 
 .myntra-login form input {
+  background: transparent;
   border: none;
-  outline: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--accent);
   width: 100%;
   padding: 10px 0px;
+  outline: none;
+  color: var(--text);
+}
+
+.myntra-login form input::placeholder {
+  color: var(--secondary);
 }
 
 .myntra-login form .forgot {
@@ -57,46 +83,47 @@ body {
   align-items: center;
   margin-top: 20px;
   font-size: 0.85em;
-  color: #e72744;
+  color: var(--accent);
   cursor: pointer;
 }
 
 .myntra-login form button {
   border: none;
   outline: none;
-  margin-top: 40px;
-  padding: 12px 0px;
-  border-radius: 5px;
+  margin-top: 30px;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
   cursor: pointer;
 }
 
 .myntra-login form .login {
-  width: 60%;
-  color: #e72744;
-  background-color: #fff;
-  box-shadow: 0 0 10px #ccc;
+  width: 100%;
+  color: var(--primary);
+  background-color: var(--accent);
+  margin-bottom: 15px;
 }
 
 .myntra-login form .login:hover {
-  background: #e72744;
-  color: #fff;
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
 .myntra-login form .signup {
-  width: 38.5%;
-  color: #e72744;
-  background: #fff;
-  box-shadow: 0 0 10px #ccc;
+  width: 100%;
+  color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .myntra-login form .signup:hover {
-  background-color: #e72744;
-  color: #fff;
+  background-color: var(--accent);
+  color: var(--primary);
 }
 
 .myntra-login .poster {
   width: 50%;
-  background-image: url("/login.png");
+  background-image: url("/login.png"); /* make sure you have the image! */
   background-size: cover;
-  background-position: 33%;
+  background-position: center;
 }

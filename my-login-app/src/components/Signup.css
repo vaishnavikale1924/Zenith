@@ -1,0 +1,111 @@
+/* src/components/SignUp.css */
+:root {
+    --primary: #121212;
+    --accent: #E0C097;
+    --secondary: #CDB4DB;
+    --text: #F5F5F5;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary);
+    color: var(--text);
+  }
+  
+  .myntra-signup {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .image-section {
+    width: 500px;
+    background-image: url('/logo.png'); /* Make sure image is in /public */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 740px;
+  }
+  
+  .form-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--secondary);
+    height: 100%;
+  }
+  
+  .signup-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--primary);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .signup-form h1 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--text);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: var(--text);
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--accent);
+    background-color: transparent;
+    color: var(--text);
+  }
+  
+  .signup-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--accent);
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .signup-btn:hover {
+    background-color: #d6b68b;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--text);
+  }
+  
+  .login-link a {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
